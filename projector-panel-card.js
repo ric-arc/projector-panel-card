@@ -36,6 +36,19 @@ class ProjectorPanelCard extends HTMLElement {
         if (entity && entity.invert_percentage) {
           invertPercentage = entity.invert_percentage;
         }
+		    
+        let cmd_up = "up";
+        let cmd_down = "down";
+        let invertCommands = false;
+        if (entity && entity.invert_commands) {
+          invertCommands = entity.invert_commands;
+          if(invertCommands){
+            cmd_up = "down";
+            cmd_down = "up";
+          }
+        }
+        
+        
           
         let shutter = document.createElement('div');
 
@@ -52,9 +65,9 @@ class ProjectorPanelCard extends HTMLElement {
           </div>
           <div class="sc-projector-panel-middle" style="flex-direction: ` + (buttonsPosition == 'right' ? 'row-reverse': 'row') + `;">
             <div class="sc-projector-panel-buttons">
-              <ha-icon-button icon="mdi:arrow-up" class="sc-projector-panel-button" data-command="up"></ha-icon-button><br>
+              <ha-icon-button icon="mdi:arrow-up" class="sc-projector-panel-button" data-command="`+cmd_up+`"></ha-icon-button><br>
               <ha-icon-button icon="mdi:stop" class="sc-projector-panel-button" data-command="stop"></ha-icon-button><br>
-              <ha-icon-button icon="mdi:arrow-down" class="sc-projector-panel-button" data-command="down"></ha-icon-button>
+              <ha-icon-button icon="mdi:arrow-down" class="sc-projector-panel-button" data-command="`+cmd_down+`"></ha-icon-button>
             </div>
             <div class="sc-projector-panel-selector">
               <div class="sc-projector-panel-selector-picture">
