@@ -14,6 +14,7 @@ entities:
     invert_commands: false
 ```
 
+
 | Name              | Type    | Requirement  | Description                                              | Default    |
 | ----------------- | ------- | ------------ | -------------------------------------------------------- | ---------- |
 | entity            | string  | **Required** | Home Assistant entity ID.                                | `none`     |
