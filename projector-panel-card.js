@@ -182,7 +182,7 @@ class ProjectorPanelCard extends HTMLElement {
 
       entities.forEach(function(entity) {
         if (entity && entity.bg_standard) {
-          bg_standard = location.host + "/" + entity.bg_standard;
+          bg_standard =window.location.protocol + "//" + location.host + "/" + entity.bg_standard;
         }
       });
       
