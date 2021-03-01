@@ -1,5 +1,11 @@
 {
     "name": "Projector Panel Card",
-    "filename": "projector-panel-card.js",
+    "files": [
+        "projector-panel-card.js",
+        "images/barra.png",
+        "images/bg_standard.jpg",
+        "images/cornice.png",
+        "images/panel.png"
+      ],
     "render_readme": true
 }
