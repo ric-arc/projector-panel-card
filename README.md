@@ -24,7 +24,7 @@ entities:
 | title_position    | string  | **Optional** | posizione di 'name' (top/bottom)                         | `top`      |
 | invert_percentage | string  | **Optional** | invertire la percentuale apertura chiusura (true / false)| `false`    |
 | invert_commands   | string  | **Optional** | invertire i comandi apertura chiusura (true / false)     | `false`    |
-
+| bg_standard       | string  | **Optional** | local/images/your_image.jpeg                             |            |
 
 
 - entity 
