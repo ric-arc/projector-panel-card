@@ -189,8 +189,8 @@ class ProjectorPanelCard extends HTMLElement {
       
       const style = document.createElement('style');
       style.textContent = `
-        .sc-projector-panel { padding: 16px; }
-          .sc-projector-panel { margin-top: 1rem; overflow: hidden; }
+        .sc-projector-panel { padding: 3px 4px 8px 3px; }
+          .sc-projector-panel { margin-top: -2rem; overflow: hidden; }
           .sc-projector-panel:first-child { margin-top: 0; }
           .sc-projector-panel-middle { display: flex; width: 210px; margin: auto; }
             .sc-projector-panel-buttons { flex: 1; text-align: center; margin-top: 0.4rem; }
